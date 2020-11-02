@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px 0px;
+    background: #485563;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, minmax(100px, 236px));
+    grid-auto-rows: 0px;
+    justify-content: center;  
+}
+
+.article {
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s all ease-in;
+    position: relative;
+}
+
+.article:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .2s all ease-in;
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 0;
+    z-index: 2;
+}
+
+.content {
+    text-align: center;
+}
+
+p {
+    font-weight: bold;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 3;
+    font-size: 20px;
+    width: 100%;
+    opacity: 0;
+    transition: .2s all ease-in;
+}
+
+img {
+    width: 100%;
+    transition: .4s all ease-in;
+}
+
+.article:hover:before {  
+    opacity: 1;
+}
+
+.article:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.article:hover p {
+    top: 50%;
+    opacity: 1;
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s all ease-in ;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
