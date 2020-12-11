@@ -10,7 +10,7 @@ import java.sql.DriverManager;
 
 /**
  *
- * @author ViruSs0209
+ * @author Ngọc Lan
  */
 public class DBContext {
     
@@ -21,7 +21,7 @@ public class DBContext {
         try {
             String url = "jdbc:sqlserver://localhost:1433;databaseName=Pinterest";
             String user = "sa";
-            String pass = "violinisto";
+            String pass = "123456789";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
         } catch (Exception ex) {

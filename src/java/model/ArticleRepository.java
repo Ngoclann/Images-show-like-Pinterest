@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author ViruSs0209
+ * @author Ngọc Lan
  */
 public class ArticleRepository {
     private DBContext db;

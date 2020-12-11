@@ -2,7 +2,7 @@
 <%-- 
     Document   : home
     Created on : Oct 1, 2020, 12:06:19 AM
-    Author     : ViruSs0209
+    Author     : Ngọc Lan
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -15,13 +15,13 @@
         <link href="${ctx}/public/css/index.css" rel="stylesheet" type="text/css" />
     </head>
     <body>   
-        <h2 style="text-align: center;margin: 20px 0px;font-family: segoe ui light; color: white;">Pinterest Clone By Dynamo</h2>
+        <h2 style="text-align: center;margin: 20px 0px;font-family: segoe ui light; color: white;">Scroll down for more images</h2>
         <div id="container">
             <c:forEach items="${articles}" var="article">
                 <div class="article num-${article.id}">
                     <div class="content">
                         <img src="${ctx}/public/image/${article.image}" />
-                        <p>This'is a picture</p>
+                        <p>${article.description}</p>
                     </div>
                 </div>
             </c:forEach>       

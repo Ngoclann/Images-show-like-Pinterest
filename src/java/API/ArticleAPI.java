@@ -18,8 +18,9 @@ import model.ArticleRepository;
 
 /**
  *
- * @author ViruSs0209
+ * @author Ngọc Lan
  */
+//Application Programming Interface
 public class ArticleAPI extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -35,6 +36,7 @@ public class ArticleAPI extends HttpServlet {
             
             Gson gson = new Gson();
             
+            //JavaScript Object Notation
             String articlesJson = gson.toJson(articles);
             
             System.out.println(articlesJson);

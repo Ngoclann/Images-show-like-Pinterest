@@ -7,7 +7,7 @@ package entity;
 
 /**
  *
- * @author ViruSs0209
+ * @author Ngọc Lan
  */
 public class Article {
     private int id;

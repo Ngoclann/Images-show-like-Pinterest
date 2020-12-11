@@ -18,7 +18,7 @@ import model.ArticleRepository;
 
 /**
  *
- * @author ViruSs0209
+ * @author Ngọc Lan
  */
 public class HomeController extends HttpServlet {
 

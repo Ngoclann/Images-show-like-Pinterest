@@ -1,5 +1,6 @@
 let isScrollable = true;
 
+//dom: document object model
 window.addEventListener('scroll', function (e) {
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const scrolled = window.scrollY;
@@ -40,6 +41,7 @@ function waitForImages() {
     });
 }
 
+//Asynchronous Javascript and XML
 async function fetchMoreArticles() {
     const lastIndex = document.querySelector("#container .article:last-child").className.split(' ')[1].split('-')[1];
 
